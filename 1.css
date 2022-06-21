@@ -1,0 +1,256 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'inter',sans-serif;
+    color: #333;
+}
+a {
+    text-decoration: none;
+}
+header{
+position:fixed;
+top:0;
+background-color:white;
+width:100%;
+z-index:2;
+border-bottom: 1px solid grey;
+}
+hr{
+height:1px;
+background-color:grey;
+border:none;
+}
+.tour-guide{
+min-width:450px;
+margin-left: auto;
+margin-right: auto;
+}
+
+header h2 {
+    display: inline-block;
+    float: left;
+    padding: 16px 24px;
+    text-transform: uppercase;
+    
+}
+
+header h2 a:hover{
+    color: #085d96;
+    transition: 0.4s;
+}
+
+header ul li {
+    margin-right: 20px;
+    display: inline-block;
+
+}
+
+header ul li a:hover{
+    color: #085d96;
+    transition: 0.4s;
+}
+
+.container{
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-top: 5px;
+    display:flex;
+    align-items: center;
+}
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.mobile-menu{
+    float: right;
+    display: none;
+   margin-left: auto
+}
+.mobile-menu:hover{
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+.sidebar {
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    left: -300px;
+    width: 150px;
+    background-color: rgb(21, 226, 160    , .9);
+    transition: .4s;   
+    z-index:1;
+}
+.sidebar ul li a{
+    color: #fff;
+}
+.sidebar ul li {
+    padding: 24px;
+    transition: .4s;
+}
+.sidebar ul li:hover{ 
+    background-color:#0d82cf;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+span.button a{
+    margin:0;   
+    padding:10px 20px;
+    background-size:20px;
+    background-repeat: no-repeat;
+    background-position:center center;
+    border-radius: 50%;
+    border: 1px solid grey;
+    margin-right: 5px;
+}
+span.button a:hover  {
+  background-color: #c7b39b;
+  opacity: 1;
+  cursor: pointer;
+}
+a.fb{
+    background-image: url(images/facebook.png);
+    width: 30px;
+    height: 30px;
+}
+a.gm{
+    background-image: url(images/gmail.png);
+    width: 30px;
+    height: 30px;
+}
+a.inst{
+    background-image: url(images/instagram.png);
+    width: 30px;
+    height: 30px;
+}
+a.twit{
+    background-image: url(images/twitter.png);
+    width: 30px;
+    height: 30px;
+}
+a.ytb{
+    background-image: url(images/youtube.png);
+    width: 30px;
+    height: 30px;
+}
+.social{
+margin-left: auto;
+}
+
+
+
+
+.hero {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    height: 70vh;
+    margin-top:66px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.hero__left {
+    width: 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center
+}
+
+.hero__right {
+    width: 50%;
+background-image: url(images/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover
+}
+
+.hero-text {
+    font-size: 14px;
+    padding-top:15px;
+    padding-bottom:15px;
+    text-align:justify;
+}
+.hero__wrapper{
+    font-size: 14px;
+    padding: 40px;
+}
+
+
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    color: gray;
+    background-color: #fff;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: .7s ease
+}
+
+.btn:hover {
+    background-color: gray;
+    color: #fff
+}
+
+
+
+
+
+
+
+
+@media (max-width:599px)
+{
+    .mobile-menu{
+        display: block;
+    }
+    header ul{
+        display: none;
+    }
+    .social{
+        display: none;
+    }
+    .hero {
+        height: 90vh;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        margin-top:0px;
+    }
+    .hero__left {
+        width: 100%;
+    }
+    .hero__right {
+        width: 100%;
+        height: 50vh;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 850px) 
+{
+    .social{
+        display: none;
+opacity: 0;
+    }
+}
+

@@ -1,0 +1,50 @@
+.social-footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+span.button-footer a{
+    margin:0;   
+    padding:10px 20px;
+    background-size:20px;
+    background-repeat: no-repeat;
+    background-position:center center;
+    border-radius: 50%;
+    border: 1px solid grey;
+    margin-right: 5px;
+}
+span.button-footer a:hover  {
+  background-color: #c7b39b;
+  opacity: 1;
+  cursor: pointer;
+}
+html{
+    overflow-x: hidden;
+}
+a.fb-footer{
+    background-image: url(images/facebook.png);
+    width: 30px;
+    height: 30px;
+}
+a.gm-footer{
+    background-image: url(images/gmail.png);
+    width: 30px;
+    height: 30px;
+}
+a.inst-footer{
+    background-image: url(images/instagram.png);
+    width: 30px;
+    height: 30px;
+}
+a.twit-footer{
+    background-image: url(images/twitter.png);
+    width: 30px;
+    height: 30px;
+}
+a.ytb-footer{
+    background-image: url(images/youtube.png);
+    width: 30px;
+    height: 30px;
+}

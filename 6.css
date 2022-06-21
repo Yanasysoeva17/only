@@ -1,0 +1,104 @@
+.imagegallery{
+font: bold 35px sans-serif;
+padding-top: 70px;
+padding-bottom: 20px; 
+}
+#slider{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.arrow{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 46%;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: 0.3s ease;
+}
+
+.leftarrow{
+    left: -20px;
+    background-image: url(images/arrow-left.png);
+ }
+
+.rightarrow{
+    right: -20px;
+    background-image: url(images/arrow-right.png);
+}
+
+#slider:hover .leftarrow{
+    left: 10px;
+    opacity: 1;
+}
+
+#slider:hover .rightarrow{
+    right: 10px;
+    opacity: 1;
+}
+.gallery-image{
+    background-size: cover;
+    height: 300px;
+}
+div.gallery-image.\31 {
+    background-image: url(images/gallery1.png);
+    width: 400px;
+}
+div.gallery-image.\32 {
+    background-image: url(images/gallery2.jpg);
+    width: 400px;
+}
+div.gallery-image.\33 {
+    background-image: url(images/gallery3.jpg);
+    width: 140px;
+}
+div.gallery-image.\34 {
+    background-image: url(images/gallery4.jpg);
+    width: 400px;
+}
+.gallery-image:hover .kvadrat {
+
+  color: white;
+  font-size:30px;
+  text-align:center;
+}
+H2.kvadrat {
+ font-size:0px;
+ color:red;
+}
+#img3
+{
+  width: 140px; 
+  height:300px;
+}
+
+#img2
+{
+  width: 400px; 
+  height:300px;
+}
+#img4
+{
+  width: 400px; 
+  height:300px;
+}
+#img1
+{
+  width: 400px; 
+  height:300px;
+}
+.four {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    max-height: 300px;
+}
+

@@ -1,0 +1,144 @@
+.pressF{
+    font: bold 35px sans-serif;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.feed {
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.feedback{
+    max-width:100%;
+}
+
+.feed__form {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width:100%;
+}
+.feed__nep {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+.feed__nep-col {
+    width:calc(97%/3);
+}
+.feed__form input {
+    border: 1px solid rgba(128, 128, 128, .3);
+    border-radius: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px
+}
+
+.feed__form textarea {
+    border: 1px solid rgba(128, 128, 128, .3);
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 5px;
+    resize:none;
+}
+
+
+
+
+
+.feed__nep-input {
+    width: 100%
+}
+
+.feed__contact {
+    margin-top: 20px
+}
+
+.feed__contact-mr {
+    margin-right: 5px
+}
+
+.feed__contact label {
+    margin-right: 20px
+}
+
+.feed__contact label:last-child {
+    margin-right: 0
+}
+
+.feed__contact span {
+    margin-right: 10px
+}
+
+.feed__topic {
+    margin-top: 5px
+}
+
+.feed__topic label {
+    display: block
+}
+
+.feed__topic select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid rgba(128, 128, 128, .3);
+    border-radius: 3px;
+    font-size: 14px
+}
+
+.feed__msg {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.feed__check {
+    margin-top: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.feed__check .chb-input {
+    margin-right: 10px;
+}
+
+
+@media (max-width:599px) {
+   
+    .btn {
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+   
+    .feed__nep {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        width:100%;
+    }
+    .feed__nep-col {
+        padding-right: 0;
+        width:100%;
+        padding-top:5px;
+    }
+    .feed__contact span {
+        margin-right: 0;
+        display: block
+    }
+    .chb-label {
+        margin-bottom: 0
+    }
+}
